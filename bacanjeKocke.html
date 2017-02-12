@@ -4,23 +4,25 @@
     <meta charset="utf-8">
     <title>bacanje kocke</title>
     <style>
-
-    h1 {
-      margin-left: 50%;
-
-    }
-
     .kocka {
-
-      margin-left: 30%;
-      width: 400px;
-      height: 800px;
+      margin-left: 25%;
+      width: 600px;
+      height:300px;
+    }
+    h1 {
+      text-align: center;
     }
 
     p {
       margin-left: 50%;
       font-size: 80px;
       font-weight: bold;
+    }
+
+    .stol {
+      font-size: 30px;
+      text-align: center;
+      margin-right: 200px;
     }
 
     .jedan {
@@ -76,8 +78,8 @@
     </style>
   </head>
   <body>
+    <h1>Baci kocku</h1>
     <div class="kocka">
-      <h1>Baci kocku</h1>
           <div class ="jedan"></div>
           <div class ="dva"></div>
           <div class ="tri"></div>
@@ -85,7 +87,11 @@
           <div class ="pet"></div>
           <div class ="šest"></div>
           <p class="paragraf"></p>
+          <p class="stol"></p>
     </div>
+    <h2>Upute</h2>
+    <h3>Refreshaj stranicu pritiskom tipke F5 <br> ili <br> u pretrazivacu zakrivljenu strelicu
+    ili <br> konbinaciju tipaka cr/r</hr>
 
      <!--<button class="tipka">STISNI ZA BACANJE</button>-->
 
@@ -97,7 +103,8 @@
     var cet = document.querySelector('.četri');
     var pet = document.querySelector('.pet');
     var sest = document.querySelector('.šest');
-    var par = document.querySelector('p');
+    var par = document.querySelector('.paragraf');
+    var stol = document.querySelector('.stol');
 
     var btn = document.querySelector('.button');
 
@@ -171,7 +178,10 @@ if ( par.textContent === '6' ) {
 
 }
 
-
+if (par.textContent === '0') {
+    stol.textContent = 'Pala kocka sa stola.  Ponovi bacanje!'
+    par.textContent = '';
+}
 
 
 
