@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bacanje kocke</title>
+    <style>
+
+    h1 {
+      margin-left: 50%;
+
+    }
+
+    .kocka {
+
+      margin-left: 30%;
+      width: 400px;
+      height: 800px;
+    }
+
+    p {
+      margin-left: 50%;
+      font-size: 80px;
+      font-weight: bold;
+    }
+
+    .jedan {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: ;
+
+    }
+
+    .dva {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: ;
+
+
+    }
+
+    .tri {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: ;
+
+    }
+
+    .četri {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: ;
+      float: right;
+
+    }
+
+    .pet {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: ;
+      float: right;
+    }
+
+    .šest {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: ;
+      float: right;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="kocka">
+      <h1>Baci kocku</h1>
+          <div class ="jedan"></div>
+          <div class ="dva"></div>
+          <div class ="tri"></div>
+          <div class ="četri"></div>
+          <div class ="pet"></div>
+          <div class ="šest"></div>
+          <p class="paragraf"></p>
+    </div>
+
+     <!--<button class="tipka">STISNI ZA BACANJE</button>-->
+
+
+    <script>
+    var jed = document.querySelector('.jedan');
+    var dva = document.querySelector('.dva');
+    var tri = document.querySelector('.tri');
+    var cet = document.querySelector('.četri');
+    var pet = document.querySelector('.pet');
+    var sest = document.querySelector('.šest');
+    var par = document.querySelector('p');
+
+    var btn = document.querySelector('.button');
+
+    var listaBrojeva = [jed,dva,tri,cet,pet,sest];
+    //slucajni broj
+    var sluBroj = Math.floor(Math.random()*7)
+    par.textContent = sluBroj;
+    //slucajni broj povezan sa brojem tocaka
+
+
+
+    //btn.addEventListener('click' , baci);
+
+
+        if ( par.textContent === '1' ) {
+          jed.style.backgroundColor = 'green';
+          dva.style.backgroundColor = '';
+          tri.style.backgroundColor = '';
+          cet.style.backgroundColor = '';
+          pet.style.backgroundColor = '';
+          sest.style.backgroundColor = '';
+
+      }
+
+      if ( par.textContent === '2' ) {
+        jed.style.backgroundColor = 'green';
+        dva.style.backgroundColor = 'green';
+        tri.style.backgroundColor = '';
+        cet.style.backgroundColor = '';
+        pet.style.backgroundColor = '';
+        sest.style.backgroundColor = '';
+
+    }
+
+    if ( par.textContent === '3' ) {
+      jed.style.backgroundColor = 'green';
+      dva.style.backgroundColor = 'green';
+      tri.style.backgroundColor = 'green';
+      cet.style.backgroundColor = '';
+      pet.style.backgroundColor = '';
+      sest.style.backgroundColor = '';
+
+  }
+
+  if ( par.textContent === '4' ) {
+    jed.style.backgroundColor = 'green';
+    dva.style.backgroundColor = 'green';
+    tri.style.backgroundColor = 'green';
+    cet.style.backgroundColor = 'green';
+    pet.style.backgroundColor = '';
+    sest.style.backgroundColor = '';
+
+}
+if ( par.textContent === '5' ) {
+  jed.style.backgroundColor = 'green';
+  dva.style.backgroundColor = 'green';
+  tri.style.backgroundColor = 'green';
+  cet.style.backgroundColor = 'green';
+  pet.style.backgroundColor = 'green';
+  sest.style.backgroundColor = '';
+
+}
+
+if ( par.textContent === '6' ) {
+  jed.style.backgroundColor = 'green';
+  dva.style.backgroundColor = 'green';
+  tri.style.backgroundColor = 'green';
+  cet.style.backgroundColor = 'green';
+  pet.style.backgroundColor = 'green';
+  sest.style.backgroundColor = 'green';
+
+}
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
